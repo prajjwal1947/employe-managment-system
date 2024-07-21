@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+    --primary: #630f94;
+    --primary-light: #630f9442;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #b5b4b4;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #f1f1f1 !important;
+}
+
+.modal-popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal-popup .successMsg {
+    text-align: center;
+    background: var(--white);
+    width: 300px;
+    margin: 2rem auto 0;
+    padding: 2rem;
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 20px;
+    top: 35%;
+    border-radius: 10px;
+}
+
+.modal-popup .icon {
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    font-size: 15px;
+    color: gray;
+    font-weight: 600;
+    background: var(--white);
+    box-shadow: 1px 3px 5px 1px #3a383887;
+    border-radius: 100px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formUI {
+    width: 60%;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 5px 5px #2222221f;
+    border-radius: 10px;
+    padding: 2rem;
+    background: #fff;
+}
+
+.formUI h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.formUI .btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--primary);
+}
+
+.formUI .btn-primary:hover {
+    background-color: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+
+input.form-control:focus {
+    border: 2px solid var(--primary);
+    box-shadow: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--primary-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+}
+
+button.btn-primary.go-back {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+}

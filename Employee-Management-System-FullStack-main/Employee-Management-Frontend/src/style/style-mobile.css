@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px) {
+    header a.title {
+        font-size: 15px;
+    }
+    .loginForm {
+        width: 100%;
+        padding: 1.5rem;
+        margin: 2rem auto;
+    }
+    .formUI {
+        width: 85%;
+        padding: 1.5rem;
+    }
+    .ViewEmployee {
+        width: 85%;
+        padding: 1.5rem;
+    }
+    .ViewEmployee .form-group {
+        display: flex;
+        align-items: flex-start;
+        gap: 0px;
+        margin: 0 0 15px 0;
+        flex-direction: column;
+    }
+    .ViewEmployee .form-group label {
+        font-size: 15px;
+    }
+  }
